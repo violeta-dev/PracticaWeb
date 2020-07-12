@@ -1,0 +1,74 @@
+git statuhtml lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>VideoScope</title>
+      
+
+      <link rel="stylesheet" href="./css/reset.css" />
+      <link rel="stylesheet" href="./css/styles.css" />
+      <link rel="stylesheet" href="./css/navbar.css" />
+     
+      <div class="container"></div>
+    </head>
+    <style>
+        .container{
+            padding:20px;
+        }
+        button[type='submit'] {
+        padding: 0.5rem;
+        font-size: 1rem;
+        min-width: 10rem;
+        border-radius: 20px;
+        border: 0;
+        background: linear-gradient(to right, #ccddee, #ff8ddd, red);
+        color: black;
+       }
+    </style>
+    <body>
+      
+        <nav id="navbar" class="navbar">
+          <input type="checkbox" id="burger-checkbox" />
+          <label for="burger-checkbox" class="burger-label"></label>
+          <div class="logo"><a href="#logo"><img src="img/logo.png"  alt="Logo"></a></div> 
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#navbar">News</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#series">Series</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#films">Films</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#favoritos">Favorites</a>
+            </li>
+            <div class="navbar-item search"> 
+            <form action="#"> 
+                <input type="text"
+                    placeholder=" Search"
+                    name="search"> 
+              
+            </form> 
+            </div> 
+            <li class="navbar-item">
+              <a href="#close">Sign Out</a>
+            </li>
+          </ul>
+        </nav>
+    </body>
+
+    
+    <section class="section-404">
+        <div class="container">
+                    <div class="text-404">
+                        <h1>404</h1>
+                        <h3>Opps! This page Could Not Be Found!</h3>
+                        <p>Sorry but the page you are looking for does not exist, have been removed or name changed</p>
+                        <form action="index.html" class="inicio-404">
+                          <button type="submit">INICIO</button>
+                        </form>
+                    </div>
+        </div>
+    </section>

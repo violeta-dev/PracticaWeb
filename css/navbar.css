@@ -1,0 +1,112 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--navbar-height);
+  background-color: white;
+}
+
+
+.navbar .burger-label {
+  width: var(--navbar-height);
+  height: var(--navbar-height);
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 40px;
+}
+
+.burger-label:before {
+  content: '';
+  background-color: darkgray;
+  width: 1em;
+  height: 0.12em;
+  position: absolute;
+  left: 0.1em;
+  top: 0.25em;
+  box-shadow: 0 0.25em 0 0 darkgray, 0 0.5em 0 0 darkgray;
+}
+
+
+.navbar-list {
+  display: none;
+  list-style: none;
+  margin: 0;
+}
+.navbar .logo {
+  margin-left: 3rem;
+  max-width: 3rem;
+  max-height: 4rem;
+ }
+#burger-checkbox {
+  display: none;
+}
+
+
+#burger-checkbox:checked ~ .navbar-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: var(--dark-color);
+  opacity: 0.85;
+  padding: 0;
+  height: calc(100vh - var(--navbar-height));
+}
+
+.navbar-item > a {
+  text-decoration: none;
+  color:white;
+  line-height: 3rem;
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+}
+.login-item {
+  
+  color: blue;
+  line-height: 3rem;
+  list-style: none;
+  
+  
+ 
+ }
+
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-items: space-between;
+  }
+  .navbar .logo {
+  height: var(--navbar-height);
+  
+  }
+  
+  
+
+  .navbar .burger-label {
+    display: none;
+  }
+
+  .navbar-list {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    flex-direction: row;
+    background-color: white;
+  }
+
+  .navbar-item > a {
+    color: var(--dark-color);
+    line-height: var(--navbar-height);
+    padding: 0 1rem;
+    font-size: inherit;
+  }
+
+  .navbar-item > a:hover {
+    background-color: rgb(177, 2, 2);
+    color: azure;
+  }
+}
+ 

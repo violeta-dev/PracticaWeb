@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Carrousek</title>
+    
+
+      <link rel="stylesheet" href="./css/reset.css" />
+      <link rel="stylesheet" href="./css/styles.css" />
+      <link rel="stylesheet" href="./css/navbar.css" />
+      <div class="container"></div>
+      <style>
+          .slider {
+	      width: 95%;
+	      margin: auto;
+		  overflow: hidden;
+		  
+        }
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	height:100%;
+	
+	
+	
+	animation: change 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100vw;
+	height: 100vh;
+	
+}
+
+@keyframes change {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+      </style>
+    </head>
+
+
+    <div class="slider">
+		<ul>
+			<li><img src="img/johnwick.jpg"></li>
+			<li><img src="img/hgr7pwf.jpg"></li>
+			<li><img src="img/avatar-poster-01.jpg"></li>
+			<li><img src="img/775_aparece-portada-pelicula-goodfellas-montaje-online.jpg"></li>
+		</ul>
+    </div>
+</html>

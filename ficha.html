@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>VideoScope</title>
+      
+
+      <link rel="stylesheet" href="./css/reset.css" />
+      <link rel="stylesheet" href="./css/styles.css" />
+      <link rel="stylesheet" href="./css/navbar.css" />
+      <div class="container"></div>
+      <style>
+        .item {
+        font-size: 12px;
+        font-family: 'Times New Roman', Times, serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+      }
+      .item-1 {
+         border-color: red;
+         color: white;
+         background: linear-gradient(to right, #ccddee, #ff8ddd, red);
+         font-family: sans-serif;
+         font-size: 30px;
+        
+        
+      }
+      .item-6 {
+        color: white;
+        max-height: 100vh;
+        display: block;
+        justify-content: center;
+      }
+      
+
+                
+      </style>        
+      <style>
+        body{
+          margin:0;
+          padding:0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns:  200px
+             minmax(200px, auto) 
+             100px;
+            grid-auto-rows: 150px;
+            gap:1fr;
+            
+        }
+        .item-1{
+            grid-column-start: 1;
+            grid-column-end: -1;
+           
+            
+        }
+        .item-6{
+            grid-column: 1 / -1;
+            border: goldenrod solid 5px; 
+           
+        }
+        .item-2, .item-3{
+            grid-row: span 2;
+            
+           
+        }
+        
+      </style>
+    </head>
+    
+   
+    <body>
+      
+        <nav id="navbar" class="navbar">
+          <input type="checkbox" id="burger-checkbox" />
+          <label for="burger-checkbox" class="burger-label"></label>
+          <div class="logo"><a href="#logo"><img src="img/logo.png"  alt="Logo"></a></div> 
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#navbar">News</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#series">Series</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#films">Films</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#favoritos">Favorites</a>
+            </li>
+            <div class="navbar-item search"> 
+            <form action="#"> 
+                <input type="text"
+                    placeholder="Search"
+                    name="search"> 
+              
+            </form> 
+            </div> 
+            <li class="navbar-item">
+              <a href="404.html">Sign Out</a>
+            </li>
+          </ul>
+        </nav>
+    </body>
+    <div class="container">
+        <div class="item item-1">MALEFICIENT</div>
+        <div class="item item-2"><img src= "img/backtothefuture.jpg"></div>
+        <div class="item item-3"><video width="auto" height= "100%" controls><source src= "img/video.mp4" type="video/mp4"></video></div>
+        <div class="item item-4"><img src= "img/angelina.jpeg"></div>
+        <div class="item item-5"><img src= "img/brad.jpeg"></div>
+        <div class="item item-6">
+          <p><u>Movie Rating:</u> Excellent</p>
+          <p><u>Age: </u> +16</p> 
+          <p><u>Year: </u>2014</p>
+          <p><u>Synopsis:</u>Maleficent is a kind-hearted fairy, who is deceived by the love of her life, Stefan. Soon, she places a curse on his daughter, Aurora, in order to exact revenge.</p>
+        </div>
+        
+      </div>
+    </div>
+</html>

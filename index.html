@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>VideoScope</title>
+      
+
+      <link rel="stylesheet" href="./css/reset.css" />
+      <link rel="stylesheet" href="./css/styles.css" />
+      <link rel="stylesheet" href="./css/navbar.css" />
+      <div class="container"></div>
+      <style>
+       
+     
+      .item {
+        font-size: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .item-1 {
+        background-color:black;
+        border: goldenrod solid 5px;
+        position:relative;
+        overflow: hidden;
+        
+      }
+      .item-1:hover .child{
+        max-height: 50%;
+      }
+      .item-2 {
+        background-color:black;
+        border: red solid 5px;
+        overflow: hidden;
+        position:relative;
+      }
+      .item-2:hover .child{
+        max-height: 50%;
+      }
+      .item-3 {
+        background-color: white;
+        border: goldenrod solid 5px;
+        overflow: hidden;
+        position:relative;
+      }
+      .item-3:hover .child{
+        max-height: 50%;
+      }
+      .item-4 {
+        background-color: rgb(1, 1, 59);
+        border: red solid 5px;
+        overflow: hidden;
+        position:relative;
+      }
+      .item-4:hover .child{
+        max-height: 50%;
+      }
+      .item-5 {
+        background-color: black;
+        border: goldenrod solid 5px;
+        overflow: hidden;
+        position:relative;
+      }
+      .item-5:hover .child{
+        max-height: 50%;
+      }
+      .rating {
+       
+        display: flex;
+        position: absolute;
+        top: 0;
+        right:0;
+        z-index: 9999;
+        
+       
+       
+      }
+      .rating-input {
+       float: right;
+       width: 16px;
+       height: 16px;
+       padding: 0;
+       margin: 0 0 0 -16px;
+       opacity: 0;
+       z-index: 9999;
+      }    
+
+      .rating:hover .rating-star:hover,
+        .rating:hover .rating-star:hover ~ .rating-star,
+        .rating-input:checked ~ .rating-star {
+        background-position: 0 0;
+      }
+
+      .rating-star,
+      .rating:hover .rating-star {
+       position: relative;
+       display: block;
+       float: right;
+       width: 16px;
+       height: 16px;
+       background: url('https://www.everythingfrontend.com/samples/star-rating/star.png') 0 -16px;
+      }
+
+      .child{
+        position: absolute;
+        background-color: rgba(255, 255, 255, .5);
+        bottom:0;
+        left: 0;
+        width: 100%;
+        max-height: 0%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 1.1rem;
+      }
+                
+      </style>        
+      <style>
+        body{
+          margin:100px 0;
+          padding:0px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(170px, 2fr));
+            grid-template-rows:repeat(auto-fit, minmax(200px, 2fr));
+            
+           
+        }
+      </style>
+    </head>
+    <body>
+      
+        <nav id="navbar" class="navbar">
+          <input type="checkbox" id="burger-checkbox" />
+          <label for="burger-checkbox" class="burger-label"></label>
+          <div class="logo"><a href="#logo"><img src="img/logo.png"  alt="Logo"></a></div> 
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#navbar">News</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#series">Series</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#films">Films</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#favoritos">Favorites</a>
+            </li>
+            <div class="navbar-item search"> 
+            <form action="#"> 
+                <input type="text"
+                    placeholder=" Search"
+                    name="search"> 
+              
+            </form> 
+            </div> 
+            <li class="navbar-item">
+              <a href="404.html">Sign Out</a>
+            </li>
+          </ul>
+        </nav>
+    </body>
+  
+      <div class="container">
+        <div class="item item-1"><a href="ficha.html"><img src= "img/backtothefuture.jpg"></a>
+          <div class="child">
+            <p>Back to the Future, Age, year & Synopsis</p>
+          </div>
+          <div class="rating">
+            <input type="radio" class="rating-input"
+                id="rating-input-1-1" name="rating-input-1">
+            <label for="rating-input-1-1" class="rating-star"></label>
+          </div>
+        </div>
+        
+        <div class="item item-2"><a href="ficha.html"><img src= "img/starwars.jpg"></a>
+          <div class="child">
+            <p> Star wars, Age, year & Synopsis</p>
+          </div>
+          <span class="rating">
+            <input type="radio" class="rating-input"
+                id="rating-input-2-1" name="rating-input-2">
+            <label for="rating-input-2-1" class="rating-star"></label>
+          </span>
+        </div>
+        <div class="item item-3"><a href="ficha.html"><img src= "img/malefica.jpg"></a>
+          <div class="child">
+            <p> Malefica, Age, year & Synopsis</p>
+          </div>
+          <span class="rating">
+            <input type="radio" class="rating-input"
+                id="rating-input-3-1" name="rating-input-3">
+            <label for="rating-input-3-1" class="rating-star"></label>
+          </span>
+        </div>
+        <div class="item item-4"><a href="ficha.html"><img src= "img/onward.jpg"></a>
+          <div class="child">
+            <p> Onward, Age, year & Synopsis</p>
+          </div>
+          <span class="rating">
+            <input type="radio" class="rating-input"
+                id="rating-input-4-1" name="rating-input-4">
+            <label for="rating-input-4-1" class="rating-star"></label>
+          </span>
+        </div>
+        <div class="item item-5"><a href="ficha.html"><img src= "img/percyjackson.jpg"></a>
+          <div class="child">
+            <p> Percy Jackson Age, year & Synopsis</p>
+          </div>
+          <span class="rating">
+            <input type="radio" class="rating-input"
+                id="rating-input-5-1" name="rating-input-5">
+            <label for="rating-input-5-1" class="rating-star"></label>
+          </span>
+        </div>
+      </div>
+
+    
+  
+</html>

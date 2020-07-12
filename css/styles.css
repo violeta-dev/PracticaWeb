@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root {
+  
+  --navbar-height: 50px;
+  --dark-color: #222222;
+  background-color: grey;
+
+
+
+}
+
+* {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: social;
+  src: url('../fonts/Social.ttf');
+}
+
+h1,
+h2
+ {
+  font-family: Roboto, 'Times New Roman', Times, serif;
+
+}
+.logo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+
+.main {
+  max-width: 100%;
+ /* margin: 20px auto;*/
+}
+.search input[type=text]{ 
+  font-size: inherit;
+  width:100px; 
+  height:3rem; 
+  border-radius:10%; 
+  border-color: black;
+} 
+
+

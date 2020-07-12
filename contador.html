@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>CoommingSoon</title>
+      
+
+      <link rel="stylesheet" href="./css/reset.css" />
+      <link rel="stylesheet" href="./css/styles.css" />
+      <link rel="stylesheet" href="./css/navbar.css" />
+      <div id="counter"></div>
+      <style>
+        body {
+        font-family: Arial, Helvetica, sans-serif;
+        
+      }
+      header {
+       width: 720px;
+       margin: 80px auto 0 auto;
+       font-size: 50px;
+      }
+      header h1 {
+        font-size: 92px;
+        font-weight: bold;
+        color: #272727;
+        text-shadow: 0 1px 0 #fff;
+      }
+
+      #counter {
+       width: 100%;
+       height: 145px;
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 30px;
+       color: red;
+       text-shadow: 0 1px 0 #fff;
+       overflow: hidden;
+       display:flex;
+       justify-content: center;
+       
+       
+      }
+      .subscribe{
+        display: flex;
+        justify-content: center;
+      }
+       </style>
+    </head>
+    <body>
+      
+        <nav id="navbar" class="navbar">
+          <input type="checkbox" id="burger-checkbox" />
+          <label for="burger-checkbox" class="burger-label"></label>
+          <div class="logo"><a href="#logo"><img src="img/logo.png"  alt="Logo"></a></div> 
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#navbar">News</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#series">Series</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#films">Films</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#favoritos">Favorites</a>
+            </li>
+            <div class="navbar-item search"> 
+            <form action="#"> 
+                <input type="text"
+                    placeholder=" Search"
+                    name="search"> 
+              
+            </form> 
+            </div> 
+            <li class="navbar-item">
+              <a href="404.html">Sign Out</a>
+            </li>
+          </ul>
+        </nav>
+    </body>
+    <header>
+        <h1>COMING SOON</h1>
+        <h2>NEW: 1st September</h2>
+    </header>
+  
+  <div id="counter">
+     <div>
+     <span>
+     <span>0</span>
+     </span>
+     <span>
+     <span>0</span>
+     </span>
+     <span>
+      <span>DAYS</span>
+     </span>
+     </div>
+      <span>:</span>
+      <span></span>
+     <div>
+      <span>
+       <span>0</span>
+      </span>
+      <span>
+       <span>0</span>
+      </span>
+      <span>
+       <span>HRS</span>
+      </span>
+       </div>
+      <span>:</span>
+      <span></span>
+     <div>
+      <span>
+       <span>0</span>
+      </span>
+      <span>
+       <span>0</span>
+      </span>
+      <span>
+       <span>MNTS</span>
+      </span>
+     </div>
+     <span>:</span>
+     <span></span>
+     <div>
+      <span>
+      <span>0</span>
+     </span>
+      <span>
+      <span>0</span>
+      </span>
+     <span>
+      <span>SECS</span>
+     </span>
+     </div>
+  </div>
+  <form name="subscribe" action="index.html">
+    <input type="email" placeholder="Email" required />
+    <input type="submit" value="Subscribe to News"" />
+    </form>
+</html>
